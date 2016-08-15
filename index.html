@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Austin Miller</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+  </head>   
+  <body id="front-page">
+      
+      <div class="jumbotron text-center">
+        <h1>Austin Miller</h1>
+        <h2>Bachelor's Degree in Mathematics with Specialization in Statistics</h2>
+        <p style="color: darkgreen">"There are no secrets to success. It is the result of <br>preparation, hard work, and learning from failure."-Colin Powell</p>
+      </div>
+        
+        <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="index.html">Main</a>
+                  <a href="drone.html">Drone</a>
+                  <a href="https://www.linkedin.com/in/austin-miller-b59a3a7a">LinkedIn Profile</a>
+            </div>
+      
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "200px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+          </script>
+
+        <div class="container">
+            
+          <h3 style="color:white">About myself:</h3>
+
+            <p style="color: white">A recent graduate of Southern Illinois University Edwardsville, I have a degree in Mathematics with specialization in Statistics. I have a strong background in Data Analysis and internship experience in Web Development. </p>
+            
+            <p style="color:white"> During my four years of schooling at SIUE, I worked on several large data analysis projects (mainly baseball). My first was a regression analysis on the ability of a player to produce offensively when compared to their respective salary. The outliers that I found, included 3 Yankees players and several players that had been injured for long periods of time during the specific season. As well, another outlier was Pete Rose who produced at a much higher level than his salary would have lead on. These are fairly obvious conclusions, but proved my methodology was correct.
+            </p>
+            <p style="color:white">My main project was an analysis of using the theory of data depth in baseball statistics. If you are not familiar with data depth, think of a simple two-dimensional plane with a cluster of points. Data depth tells us how far each point is from the center of that cluster. We can think of this same thing in three or more dimensions, as well, and the complexity becomes greater. There are many different methods to do this so I chose three and researched them heavily. I used mainly one, the Projection Method, because it tended to be most accurate and it required a simple R function. In order to do my project I used average statistics for each Major League Baseball team. I collected data from 2012 through 2016 (seperately). I took six statistics from batting and found the data depth of that 6-d group of statistics. I took this same idea and used it for starting pitching, relief pitching and fielding. Thus, we have four data depths for each team. In order to manipulate our data even further, I used K-means clustering to group teams with close data depths across the four. Therefore, we lose some error in our findings. For some years, I found many competitive teams to be clustered together, but a few showed little to no grouping. Baseball is very very random....</p>
+            
+            <p style="color:white">As of now, I am working at Anheuser-Buesch as a contracted data analyst. I am working on finding fraudulent retailers that are taking advantage of a three for two deal on many brands of beer. The position requires mostly the use of excel functions such as: vlookups, pivot tables, concatination, and other simple methods in order to compare our sales data with the number of coupons that retailers are turning in.</p>
+        
+            
+    </div>
+      
+      
+      
+      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
